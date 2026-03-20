@@ -67,7 +67,7 @@
       padding: 14px 28px;
       border-radius: 8px;
       background: var(--verde);
-      color: #0f172a;
+      color: #FFFFFF;
       text-decoration: none;
       font-weight: 600;
       transition: all 0.2s ease;
@@ -200,14 +200,38 @@
       Segurança, rapidez e zero burocracia.
     </p>
 
-    <a href="mailto:contato@assinandofacil.com" class="btn">
-      Quero ser avisado
-    </a>
+    <div class="btn" onclick="handleMailto()">
+        Quero ser avisado
+    </div>
+
 
     <div class="footer">
       © 2026 Assinando Fácil • Todos os direitos reservados
     </div>
   </div>
+<script>
+function handleMailto() {
+  const email = "contato@assinandofacil.com";
+  const subject = encodeURIComponent("Quero ser avisado");
+  const body = encodeURIComponent("Olá! Quero ser avisado quando lançar.");
 
+  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+  // Tenta abrir o cliente de email
+  window.location.href = mailtoLink;
+
+  // Fallback após 1.5s
+  setTimeout(() => {
+    const fallback = confirm(
+      "Não conseguimos abrir seu app de email.\n\nDeseja copiar o endereço?"
+    );
+
+    if (fallback) {
+      navigator.clipboard.writeText(email);
+      alert("Email copiado: " + email);
+    }
+  }, 1500);
+}
+</script>
 </body>
 </html>
