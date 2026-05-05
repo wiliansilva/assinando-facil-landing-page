@@ -1,237 +1,808 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assinando Fácil — Em breve</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --azul: #2563EB;
-      --azul-escuro: #1E4ED8;
-      --verde: #22C55E;
-      --branco: #FFFFFF;
-      --cinza-claro: rgba(255,255,255,0.85);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--branco);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding: 20px;
-      background: #2563ebf2;
-    }
-
-    .card {
-      text-align: center;
-      max-width: 600px;
-      background: var(--azul);
-      padding: 50px 40px;
-      border-radius: 16px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    }
-
-    .logo {
-      max-width: 340px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 15px;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 16px;
-      color: var(--cinza-claro);
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 8px;
-      background: var(--verde);
-      color: #FFFFFF;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .footer {
-      margin-top: 35px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-    }
-
-    @media (max-width: 500px) {
-      .card {
-        padding: 40px 25px;
-      }
-      h1 {
-        font-size: 22px;
-      }
-    }
-  </style><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assinando Fácil — Em breve</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --azul: #2563EB;
-      --azul-escuro: #1E4ED8;
-      --verde: #22C55E;
-      --branco: #FFFFFF;
-      --cinza-claro: rgba(255,255,255,0.85);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--branco);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      padding: 20px;
-      background: #2563ebe6;
-    }
-
-    .card {
-      text-align: center;
-      max-width: 600px;
-      background: var(--azul);
-      padding: 50px 40px;
-      border-radius: 16px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    }
-
-    .logo {
-      max-width: 340px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 15px;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 16px;
-      color: var(--cinza-claro);
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      border-radius: 8px;
-      background: var(--verde);
-      color: #0f172a;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .footer {
-      margin-top: 35px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-    }
-
-    @media (max-width: 500px) {
-      .card {
-        padding: 40px 25px;
-      }
-      h1 {
-        font-size: 22px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinando Fácil — Assinatura Eletrônica com Validade Jurídica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="img/icons/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
 <body>
-  <div class="card">
-    <img src="Logo.png" alt="Assinando Fácil" class="logo">
 
-    <h1>Estamos preparando algo incrível 🚀</h1>
-
-    <p>
-      A forma mais simples de assinar documentos digitalmente está chegando.<br>
-      Segurança, rapidez e zero burocracia.
-    </p>
-
-    <div class="btn" onclick="handleMailto()">
-        Quero ser avisado
-    </div>
-
-
-    <div class="footer">
-      © 2026 Assinando Fácil • Todos os direitos reservados
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="img/logo-branco.png" alt="Assinando Fácil" id="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">Como funciona</a></li>
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#security">Segurança</a></li>
+        <li><a href="#use-cases">Casos de uso</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://api.whatsapp.com/send/?phone=5544991230976" target="_blank" rel="noopener" class="btn-nav-login">Falar com especialista</a>
+        <a href="#cta" class="btn-nav-cta">Começar agora</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
-<script>
-function handleMailto() {
-  const email = "contato@assinandofacil.com";
-  const subject = encodeURIComponent("Quero ser avisado");
-  const body = encodeURIComponent("Olá! Quero ser avisado quando lançar.");
+</nav>
 
-  const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <ul class="mobile-menu-links">
+    <li><a href="#how-it-works">Como funciona</a></li>
+    <li><a href="#features">Recursos</a></li>
+    <li><a href="#security">Segurança</a></li>
+    <li><a href="#use-cases">Casos de uso</a></li>
+  </ul>
+  <div class="mobile-menu-actions">
+    <a href="https://api.whatsapp.com/send/?phone=5544991230976" target="_blank" rel="noopener" class="mobile-menu-btn-wpp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar com especialista
+    </a>
+    <a href="#cta" class="mobile-menu-btn-cta">Começar agora</a>
+  </div>
+</div>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
-  // Tenta abrir o cliente de email
-  window.location.href = mailtoLink;
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-bg-circle hero-bg-c1"></div>
+  <div class="hero-bg-circle hero-bg-c2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-up">
+          <span class="hero-badge-dot"></span>
+          100% seguro e válido juridicamente
+        </div>
+        <h1 class="hero-title animate-fade-up delay-1">
+          Acelere contratos e elimine<br>burocracia com <em>assinatura digital</em>
+        </h1>
+        <p class="hero-desc animate-fade-up delay-2">
+          Empresas assinam contratos em minutos, com rastreabilidade total, validade jurídica e zero papel. Do envio à confirmação, tudo em uma plataforma.
+        </p>
+        <div class="hero-actions animate-fade-up delay-3">
+          <a href="#cta" class="btn-hero-primary">Começar agora →</a>
+          <a href="#demo" class="btn-hero-outline">Ver como funciona</a>
+        </div>
+        <div class="hero-trust animate-fade-up delay-4">
+          <div class="hero-trust-item"><div class="hero-trust-icon">✓</div>Validade jurídica</div>
+          <div class="hero-trust-item"><div class="hero-trust-icon">✓</div>Sem papel</div>
+          <div class="hero-trust-item"><div class="hero-trust-icon">✓</div>Aprovação em minutos</div>
+        </div>
+      </div>
+      <div class="hero-visual animate-fade-up delay-3">
+        <div class="hero-card hero-card-main">
+          <div class="hero-card-badge">🎉 Documento assinado!</div>
+          <div class="hero-card-title">Contrato de Prestação de Serviços</div>
+          <div class="hero-card-step"><div class="step-check done">✓</div>Leia o documento</div>
+          <div class="hero-card-step"><div class="step-check done">✓</div>Confirme seus dados</div>
+          <div class="hero-card-step"><div class="step-check done">✓</div>Foto do documento</div>
+          <div class="hero-card-step"><div class="step-check done">✓</div>Selfie com documento</div>
+          <div class="hero-card-step"><div class="step-check active">5</div>Assinatura manuscrita</div>
+          <div class="hero-card-step"><div class="step-check pending">6</div>Token de autenticação</div>
+        </div>
+        <div class="hero-card hero-card-sm">
+          <div class="hero-card-notification">+1 assinatura agora</div>
+          <div class="hero-card-sm-icon">📄</div>
+          <div class="hero-card-sm-label">Contratos assinados</div>
+          <div class="hero-card-sm-val">248.413</div>
+          <div class="hero-card-sm-sub">↑ 14% vs ontem</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  // Fallback após 1.5s
-  setTimeout(() => {
-    const fallback = confirm(
-      "Não conseguimos abrir seu app de email.\n\nDeseja copiar o endereço?"
-    );
+<!-- HOW IT WORKS -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-eyebrow reveal">Processo simplificado</p>
+      <h2 class="section-title reveal reveal-delay-1">Do envio à assinatura<br>em minutos</h2>
+      <p class="section-desc reveal reveal-delay-2">Processo guiado e intuitivo. Sem burocracia, sem papel, sem deslocamento.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num-wrap"><div class="step-num">📤</div></div>
+        <h3 class="step-title">Envio</h3>
+        <p class="step-desc">Envie o documento via API, upload manual ou integração com seu ERP e CRM. O signatário recebe notificação por e-mail ou WhatsApp com link de acesso.</p>
+      </div>
+      <div class="step-item reveal reveal-delay-1">
+        <div class="step-num-wrap"><div class="step-num">✍️</div></div>
+        <h3 class="step-title">Processo de assinatura</h3>
+        <p class="step-desc">O signatário confirma dados, envia foto do documento, faz selfie para validação biométrica e assina manuscritamente na tela em poucos minutos.</p>
+      </div>
+      <div class="step-item reveal reveal-delay-2">
+        <div class="step-num-wrap"><div class="step-num success">✓</div></div>
+        <h3 class="step-title">Finalização</h3>
+        <p class="step-desc">Token OTP confirma a identidade. O PDF assinado com certificado digital é gerado e entregue automaticamente a todos os envolvidos.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    if (fallback) {
-      navigator.clipboard.writeText(email);
-      alert("Email copiado: " + email);
-    }
-  }, 1500);
-}
-</script>
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-eyebrow reveal">Recursos</p>
+      <h2 class="section-title reveal reveal-delay-1">Tudo que sua empresa precisa<br>em um só lugar</h2>
+      <p class="section-desc reveal reveal-delay-2">Tecnologia de ponta para garantir segurança, validade jurídica e facilidade de uso.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon-wrap" style="background:#e0eaff">⚖️</div>
+        <h3 class="feature-title">Validade jurídica</h3>
+        <p class="feature-desc">Atende à Lei 14.063/2020 e MP 2.200-2/2001. Hash de integridade em cada documento assinado. Aceito em processos judiciais.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon-wrap" style="background:#dcfce7">🔗</div>
+        <h3 class="feature-title">Integração via API</h3>
+        <p class="feature-desc">API REST completa com documentação detalhada. Conecte seu ERP, CRM ou sistema interno. Webhooks.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon-wrap" style="background:#fef3c7">✍️</div>
+        <h3 class="feature-title">Assinatura eletrônica com validação de identidade</h3>
+        <p class="feature-desc">Selfie com documento, foto do RG/CNH e assinatura manuscrita digital. Múltiplas camadas de autenticação.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon-wrap" style="background:#fce7f3">💬</div>
+        <h3 class="feature-title">Envio por e-mail e WhatsApp</h3>
+        <p class="feature-desc">Notifique os signatários pelo canal preferido deles. Links de assinatura chegam na hora, sem fricção.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon-wrap" style="background:#e0eaff">📊</div>
+        <h3 class="feature-title">Auditoria completa</h3>
+        <p class="feature-desc">Registro detalhado de cada etapa com timestamp, IP, geolocalização e hash de integridade. Trilha imutável.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon-wrap" style="background:#d1fae5">📱</div>
+        <h3 class="feature-title">100% mobile</h3>
+        <p class="feature-desc">Interface otimizada para celular, tablet e computador. Assine qualquer lugar, sem instalar nada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo">
+  <div class="container">
+    <div class="demo-inner">
+      <div class="demo-left reveal">
+        <p class="section-eyebrow">Veja na prática</p>
+        <h2 class="section-title">Experiência guiada<br>do início ao fim</h2>
+        <p class="section-desc">O signatário é conduzido por 6 etapas simples e intuitivas. Sem confusão, sem burocracia.</p>
+        <div class="demo-steps">
+          <button class="demo-step-btn active" data-step="0">
+            <div class="demo-step-num-badge">1</div>
+            <div><div class="demo-step-btn-title">Leia o documento</div><div class="demo-step-btn-desc">Leitura completa antes de qualquer ação</div></div>
+          </button>
+          <button class="demo-step-btn" data-step="1">
+            <div class="demo-step-num-badge">2</div>
+            <div><div class="demo-step-btn-title">Confirme seus dados</div><div class="demo-step-btn-desc">Nome, CPF, e-mail e telefone validados</div></div>
+          </button>
+          <button class="demo-step-btn" data-step="2">
+            <div class="demo-step-num-badge">3</div>
+            <div><div class="demo-step-btn-title">Foto do documento</div><div class="demo-step-btn-desc">Frente e verso do RG ou CNH</div></div>
+          </button>
+          <button class="demo-step-btn" data-step="3">
+            <div class="demo-step-num-badge">4</div>
+            <div><div class="demo-step-btn-title">Selfie com documento</div><div class="demo-step-btn-desc">Validação biométrica de identidade</div></div>
+          </button>
+          <button class="demo-step-btn" data-step="4">
+            <div class="demo-step-num-badge">5</div>
+            <div><div class="demo-step-btn-title">Assinatura Manuscrita</div><div class="demo-step-btn-desc">Assine digitando ou desenhando na tela</div></div>
+          </button>
+          <button class="demo-step-btn" data-step="5">
+            <div class="demo-step-num-badge">6</div>
+            <div><div class="demo-step-btn-title">Token de autenticação</div><div class="demo-step-btn-desc">Código OTP por e-mail para confirmar</div></div>
+          </button>
+        </div>
+      </div>
+
+      <div class="demo-mockup reveal reveal-delay-2">
+        <div class="mockup-topbar">
+          <div class="mockup-dot" style="background:#FC5F57"></div>
+          <div class="mockup-dot" style="background:#FEBC2E"></div>
+          <div class="mockup-dot" style="background:#28C840"></div>
+          <div class="mockup-title-bar">app.assinandofacil.com.br/assinar</div>
+        </div>
+        <div>
+          <div class="mockup-progress"><div class="mockup-progress-fill" id="demo-progress" style="width:16%"></div></div>
+          <div class="mockup-header">
+            <div>
+              <div class="mockup-step-title" id="demo-title">Leia o documento com atenção</div>
+              <div class="mockup-step-sub" id="demo-sub">Etapa 1 de 6</div>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button id="demo-back" style="display:none;padding:6px 12px;border:1px solid #e2e8f0;border-radius:7px;font-size:11px;font-weight:700;font-family:'Montserrat',sans-serif;cursor:pointer;background:white;color:#64748b">Voltar</button>
+              <button id="demo-next" style="padding:6px 14px;background:#2563EB;color:white;border:none;border-radius:7px;font-size:11px;font-weight:700;font-family:'Montserrat',sans-serif;cursor:pointer">Avançar →</button>
+            </div>
+          </div>
+
+          <!-- SCREEN 1: Leia o documento -->
+          <div class="mockup-screen active" id="screen-0">
+            <div class="mockup-main">
+              <div style="font-size:9px;font-weight:800;color:#374151;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.8px;text-align:center">CONTRATO DE PRESTAÇÃO DE SERVIÇOS</div>
+              <div class="doc-line" style="width:100%"></div><div class="doc-line" style="width:95%"></div><div class="doc-line" style="width:88%"></div><div class="doc-line" style="width:100%"></div><div class="doc-line" style="width:92%"></div><div class="doc-line" style="width:82%"></div>
+              <div style="font-size:9px;font-weight:800;color:#374151;margin:9px 0 6px;text-transform:uppercase;letter-spacing:0.5px">1. OBJETO DO CONTRATO</div>
+              <div class="doc-line" style="width:100%"></div><div class="doc-line" style="width:97%"></div><div class="doc-line" style="width:90%"></div><div class="doc-line" style="width:100%"></div><div class="doc-line" style="width:75%"></div>
+              <div style="margin-top:12px;display:flex;align-items:center;gap:8px;padding:8px;background:#f0fdf4;border-radius:7px;border:1px solid #bbf7d0">
+                <input type="checkbox" style="width:14px;height:14px;accent-color:#22C55E;flex-shrink:0" id="doc-check">
+                <span style="font-size:10px;color:#15803d;font-weight:600">Confirmo que verifiquei o documento</span>
+              </div>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">1</div><div class="mockup-step-label active">Leia o doc.</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">2</div><div class="mockup-step-label pending">Seus dados</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">3</div><div class="mockup-step-label pending">Foto doc.</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">4</div><div class="mockup-step-label pending">Selfie</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">5</div><div class="mockup-step-label pending">Assinatura</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">6</div><div class="mockup-step-label pending">Token</div></div>
+            </div>
+          </div>
+
+          <!-- SCREEN 2: Confirme seus dados -->
+          <div class="mockup-screen" id="screen-1">
+            <div class="mockup-main">
+              <p style="font-size:10px;font-weight:700;color:#2563EB;margin-bottom:12px;text-align:center">Confirme seus dados para continuar com a assinatura</p>
+              <div class="mform-group">
+                <span class="mform-label">Nome</span>
+                <div class="mform-input"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>Wilian Alves da Silva</div>
+              </div>
+              <div class="mform-group">
+                <span class="mform-label">CPF</span>
+                <div class="mform-input"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#94a3b8" stroke-width="1.5"/><path d="M8 10h8M8 14h5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>816.948.670-05</div>
+              </div>
+              <div class="mform-group">
+                <span class="mform-label">E-mail</span>
+                <div class="mform-input"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="#94a3b8" stroke-width="1.5"/><path d="M2 8l10 7 10-7" stroke="#94a3b8" stroke-width="1.5"/></svg>wilian@assinandofacil.com</div>
+              </div>
+              <div class="mform-group">
+                <span class="mform-label">Telefone</span>
+                <div class="mform-input"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><rect x="6" y="2" width="12" height="20" rx="3" stroke="#94a3b8" stroke-width="1.5"/><circle cx="12" cy="18" r="1" fill="#94a3b8"/></svg>(44) 99000 1239</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:4px">
+                <input type="checkbox" style="width:13px;height:13px;accent-color:#22C55E;flex-shrink:0">
+                <span style="font-size:10px;color:#374151;font-weight:600">Declaro que meus dados estão corretos</span>
+              </div>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Leia o doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">2</div><div class="mockup-step-label active">Seus dados</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">3</div><div class="mockup-step-label pending">Foto doc.</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">4</div><div class="mockup-step-label pending">Selfie</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">5</div><div class="mockup-step-label pending">Assinatura</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">6</div><div class="mockup-step-label pending">Token</div></div>
+            </div>
+          </div>
+
+          <!-- SCREEN 3: Foto do documento -->
+          <div class="mockup-screen" id="screen-2">
+            <div class="mockup-main">
+              <p style="font-size:10px;font-weight:700;color:#2563EB;margin-bottom:2px;text-align:center">Envie uma foto frente e verso do seu documento</p>
+              <p style="font-size:9px;color:#22C55E;font-weight:600;margin-bottom:10px;text-align:center">✓ Documento inteiro &nbsp;✓ Sem reflexos &nbsp;✓ Texto legível</p>
+              <div class="card-illus-wrap">
+                <div class="card-illus">
+                  <div class="card-illus-label">Frente *</div>
+                  <svg viewBox="0 0 120 80" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="118" height="78" rx="5" fill="#f0fdf4" stroke="#22C55E" stroke-width="1.5"/>
+                    <rect x="7" y="9" width="30" height="40" rx="2" fill="#dcfce7"/>
+                    <circle cx="22" cy="20" r="7" fill="#4ade80" opacity=".7"/>
+                    <path d="M10 44 Q22 34 34 44" fill="#4ade80" opacity=".6"/>
+                    <rect x="45" y="13" width="66" height="4" rx="2" fill="#dcfce7"/>
+                    <rect x="45" y="22" width="52" height="3" rx="1.5" fill="#dcfce7"/>
+                    <rect x="45" y="30" width="58" height="3" rx="1.5" fill="#dcfce7"/>
+                    <rect x="45" y="38" width="42" height="3" rx="1.5" fill="#dcfce7"/>
+                    <circle cx="20" cy="64" r="6" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+                    <circle cx="20" cy="64" r="3.5" fill="none" stroke="#4ade80" stroke-width="1.2"/>
+                    <circle cx="20" cy="64" r="1.2" fill="#4ade80"/>
+                    <path d="M40 64 Q52 58 64 64 Q72 68 80 64" stroke="#374151" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  </svg>
+                  <button class="card-illus-btn">TIRAR FOTO</button>
+                </div>
+                <div class="card-illus">
+                  <div class="card-illus-label">Verso *</div>
+                  <svg viewBox="0 0 120 80" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="118" height="78" rx="5" fill="#f0fdf4" stroke="#22C55E" stroke-width="1.5"/>
+                    <rect x="7" y="9" width="106" height="4" rx="2" fill="#dcfce7"/>
+                    <rect x="7" y="18" width="90" height="3" rx="1.5" fill="#dcfce7"/>
+                    <rect x="7" y="26" width="96" height="3" rx="1.5" fill="#dcfce7"/>
+                    <rect x="7" y="34" width="76" height="3" rx="1.5" fill="#dcfce7"/>
+                    <rect x="7" y="48" width="3" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="12" y="48" width="2" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="16" y="48" width="4" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="22" y="48" width="2" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="26" y="48" width="3" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="31" y="48" width="1" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="34" y="48" width="4" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="40" y="48" width="2" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="44" y="48" width="3" height="20" fill="#4ade80" opacity=".8"/>
+                    <rect x="91" y="46" width="22" height="22" rx="2" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+                    <rect x="94" y="49" width="7" height="7" rx="1" fill="#4ade80" opacity=".7"/>
+                    <rect x="104" y="49" width="7" height="7" rx="1" fill="#4ade80" opacity=".7"/>
+                    <rect x="94" y="59" width="7" height="7" rx="1" fill="#4ade80" opacity=".7"/>
+                    <rect x="104" y="57" width="3" height="3" fill="#4ade80" opacity=".7"/>
+                    <rect x="108" y="61" width="3" height="3" fill="#4ade80" opacity=".7"/>
+                  </svg>
+                  <button class="card-illus-btn">TIRAR FOTO</button>
+                </div>
+              </div>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Leia o doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Seus dados</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">3</div><div class="mockup-step-label active">Foto doc.</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">4</div><div class="mockup-step-label pending">Selfie</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">5</div><div class="mockup-step-label pending">Assinatura</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">6</div><div class="mockup-step-label pending">Token</div></div>
+            </div>
+          </div>
+
+          <!-- SCREEN 4: Selfie com o documento -->
+          <div class="mockup-screen" id="screen-3">
+            <div class="mockup-main" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:10px">
+              <p style="font-size:10px;font-weight:700;color:#2563EB;margin-bottom:2px">Envie uma foto segurando o documento</p>
+              <p style="font-size:9px;color:#22C55E;font-weight:600;margin-bottom:8px">✓ Documento visível &nbsp;✓ Não cubra o rosto</p>
+              <svg viewBox="0 0 180 130" width="148" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="90" cy="42" rx="22" ry="24" fill="#fed7aa"/>
+                <path d="M69 36 Q72 18 90 16 Q108 18 111 36 Q106 24 90 22 Q74 24 69 36z" fill="#92400e"/>
+                <ellipse cx="83" cy="40" rx="2.5" ry="3" fill="#1F2937"/>
+                <ellipse cx="97" cy="40" rx="2.5" ry="3" fill="#1F2937"/>
+                <path d="M86 52 Q90 57 94 52" stroke="#c2410c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M62 90 Q66 70 90 68 Q114 70 118 90 L122 124 L58 124z" fill="#60a5fa"/>
+                <path d="M62 90 Q46 96 42 110 L52 118 Q56 102 64 96z" fill="#fed7aa"/>
+                <rect x="24" y="103" width="30" height="22" rx="3" fill="#f0fdf4" stroke="#22C55E" stroke-width="1.5"/>
+                <rect x="27" y="107" width="9" height="13" rx="1" fill="#dcfce7"/>
+                <circle cx="31.5" cy="112" r="3" fill="#4ade80" opacity=".7"/>
+                <path d="M27 117 Q31.5 113 36 117" fill="#4ade80" opacity=".6"/>
+                <rect x="40" y="108" width="11" height="2" rx="1" fill="#dcfce7"/>
+                <rect x="40" y="113" width="9" height="2" rx="1" fill="#dcfce7"/>
+                <rect x="40" y="118" width="10" height="2" rx="1" fill="#dcfce7"/>
+                <path d="M118 90 Q136 96 140 106 L134 116 Q128 104 122 96z" fill="#fed7aa"/>
+                <rect x="134" y="70" width="20" height="36" rx="4" fill="#1F2937"/>
+                <rect x="136" y="73" width="16" height="27" rx="2" fill="#dbeafe"/>
+                <circle cx="144" cy="103" r="1.8" fill="#374151"/>
+                <circle cx="68" cy="50" r="2.5" fill="#fed7aa"/>
+                <circle cx="112" cy="50" r="2.5" fill="#fed7aa"/>
+              </svg>
+              <button style="margin-top:8px;padding:7px 20px;background:#2563EB;color:white;border:none;border-radius:7px;font-size:10px;font-weight:700;font-family:'Montserrat',sans-serif;cursor:pointer">TIRAR FOTO</button>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Leia o doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Seus dados</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Foto doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">4</div><div class="mockup-step-label active">Selfie</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">5</div><div class="mockup-step-label pending">Assinatura</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">6</div><div class="mockup-step-label pending">Token</div></div>
+            </div>
+          </div>
+
+          <!-- SCREEN 5: Assinatura Manuscrita -->
+          <div class="mockup-screen" id="screen-4">
+            <div class="mockup-main">
+              <p style="font-size:10px;color:#374151;margin-bottom:2px;font-weight:600">Você pode desenhar ou gerar automaticamente pelo nome</p>
+              <p style="font-size:10px;color:#22C55E;margin-bottom:10px;font-weight:600">✓ A assinatura digital possui validade jurídica</p>
+              <div style="display:flex;border-bottom:1.5px solid #e2e8f0;margin-bottom:10px">
+                <button style="padding:6px 14px;border:none;background:none;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#2563EB;border-bottom:2.5px solid #2563EB;cursor:pointer;margin-bottom:-1.5px">DIGITAR</button>
+                <button style="padding:6px 14px;border:none;background:none;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;color:#919BAF;cursor:pointer">DESENHAR</button>
+              </div>
+              <div class="mform-group">
+                <span class="mform-label">Nome *</span>
+                <div class="mform-input"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#94a3b8" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>Wilian Alves da Silva</div>
+              </div>
+              <div style="border:1.5px solid #e2e8f0;border-radius:8px;height:66px;display:flex;align-items:center;justify-content:center;background:#fafbfd;font-size:24px;color:#1F2937;font-family:'Dancing Script',Georgia,serif">Wilian Alves da Silva</div>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Leia o doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Seus dados</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Foto doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Selfie</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">5</div><div class="mockup-step-label active">Assinatura</div></div>
+              <div class="mockup-step-connector"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot pending">6</div><div class="mockup-step-label pending">Token</div></div>
+            </div>
+          </div>
+
+          <!-- SCREEN 6: Token de autenticação -->
+          <div class="mockup-screen" id="screen-5">
+            <div class="mockup-main" style="text-align:center;padding:14px 20px">
+              <p style="font-size:10px;color:#374151;margin-bottom:2px;font-weight:600">Digite o código que enviamos para</p>
+              <p style="font-size:11px;font-weight:700;color:#2563EB;margin-bottom:14px">wilian@assinandofacil.com</p>
+              <div class="otp-inputs">
+                <div class="otp-box"></div><div class="otp-box"></div><div class="otp-box"></div>
+                <div class="otp-box"></div><div class="otp-box"></div><div class="otp-box"></div>
+              </div>
+              <p style="font-size:11px;color:#2563EB;font-weight:600;cursor:pointer">Reenviar token ›</p>
+              <p style="font-size:10px;color:#94a3b8;margin-top:14px;line-height:1.6">Ao finalizar, você aceita nossos<br>Termos de Uso e Política de Privacidade.</p>
+            </div>
+            <div class="mockup-sidebar">
+              <div class="mockup-sidebar-title">Vamos assinar!</div>
+              <div class="mockup-sidebar-sub">Siga os passos</div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Leia o doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Seus dados</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Foto doc.</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Selfie</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot done">✓</div><div class="mockup-step-label done">Assinatura</div></div>
+              <div class="mockup-step-connector done"></div>
+              <div class="mockup-step-item"><div class="mockup-step-dot active">6</div><div class="mockup-step-label active">Token</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section id="security">
+  <div class="container">
+    <div class="security-inner">
+      <div class="reveal">
+        <p class="security-eyebrow">Segurança e conformidade</p>
+        <h2 class="security-title">Proteção que vai além<br>da assinatura</h2>
+        <p class="security-desc">Cada documento assinado pelo Assinando Fácil carrega evidências legais robustas. Auditável, rastreável e juridicamente válido desde o primeiro uso.</p>
+        <div class="compliance-box">
+          <div class="compliance-title">Conformidade legal</div>
+          <div class="compliance-item"><div class="compliance-check">✓</div><span class="compliance-text">Lei 14.063/2020 — Assinatura Eletrônica</span></div>
+          <div class="compliance-item"><div class="compliance-check">✓</div><span class="compliance-text">MP 2.200-2/2001 — ICP-Brasil</span></div>
+          <div class="compliance-item"><div class="compliance-check">✓</div><span class="compliance-text">LGPD — Proteção de dados pessoais</span></div>
+          <div class="compliance-item"><div class="compliance-check">✓</div><span class="compliance-text">Aceite em processos judiciais</span></div>
+        </div>
+      </div>
+      <div class="security-cards reveal reveal-delay-2">
+        <div class="security-card">
+          <div class="security-card-icon">📋</div>
+          <div class="security-card-title">Registro auditável completo</div>
+          <div class="security-card-desc">Cada ação registrada com timestamp, IP, dispositivo e localização. Trilha de auditoria imutável.</div>
+        </div>
+        <div class="security-card">
+          <div class="security-card-icon">🪪</div>
+          <div class="security-card-title">Validação de identidade</div>
+          <div class="security-card-desc">Documento oficial e token por canal independente. Múltiplas camadas de consentimento.</div>
+        </div>
+        <div class="security-card">
+          <div class="security-card-icon">🔒</div>
+          <div class="security-card-title">Integridade do documento</div>
+          <div class="security-card-desc">Hash criptográfico único gerado após assinatura. Qualquer alteração invalida o documento automaticamente.</div>
+        </div>
+        <div class="security-card">
+          <div class="security-card-icon">🛡️</div>
+          <div class="security-card-title">Criptografia de ponta</div>
+          <div class="security-card-desc">TLS 1.3 em todas as conexões.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section id="use-cases">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-eyebrow reveal">Casos de uso</p>
+      <h2 class="section-title reveal reveal-delay-1">Para toda a sua operação</h2>
+      <p class="section-desc reveal reveal-delay-2">Do comercial ao jurídico, do RH ao financeiro — uma plataforma que se adapta a qualquer fluxo.</p>
+    </div>
+    <div class="use-cases-tabs reveal">
+      <button class="use-case-tab active" onclick="switchCase(0)">Contratos comerciais</button>
+      <button class="use-case-tab" onclick="switchCase(1)">Onboarding de clientes</button>
+      <button class="use-case-tab" onclick="switchCase(2)">RH e admissões</button>
+      <button class="use-case-tab" onclick="switchCase(3)">Documentos internos</button>
+      <button class="use-case-tab" onclick="switchCase(4)">Operações financeiras</button>
+    </div>
+    <div class="use-case-panel active" id="case-0">
+      <div>
+        <div class="use-case-tags"><span class="use-case-tag">Vendas</span><span class="use-case-tag">Jurídico</span><span class="use-case-tag">Comercial</span></div>
+        <h3 class="use-case-title">Contratos comerciais</h3>
+        <p class="use-case-desc">Propostas, contratos de serviço, acordos de parceria e NDAs assinados remotamente, com validade jurídica plena.</p>
+        <div class="use-case-features">
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Envio imediato por link ou e-mail</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Acompanhamento em tempo real do status</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Arquivo final em PDF com certificado</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Integração via API com seu CRM</div>
+        </div>
+      </div>
+      <div class="use-case-visual">
+        <svg viewBox="0 0 320 200" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="200" rx="12" fill="#EFF6FF"/>
+          <rect x="24" y="24" width="272" height="152" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <rect x="40" y="44" width="120" height="8" rx="4" fill="#CBD5E1"/>
+          <rect x="40" y="60" width="200" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="40" y="72" width="180" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="40" y="84" width="190" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="40" y="96" width="160" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="40" y="116" width="100" height="28" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 2"/>
+          <text x="90" y="134" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="13" fill="#2563EB">Assinado ✓</text>
+          <rect x="180" y="124" width="80" height="14" rx="4" fill="#DCFCE7"/>
+          <text x="220" y="135" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="700" fill="#16a34a">VÁLIDO JURIDICAMENTE</text>
+        </svg>
+      </div>
+    </div>
+    <div class="use-case-panel" id="case-1">
+      <div>
+        <div class="use-case-tags"><span class="use-case-tag">Customer Success</span><span class="use-case-tag">Operações</span></div>
+        <h3 class="use-case-title">Onboarding de clientes</h3>
+        <p class="use-case-desc">Acelere a ativação de novos clientes. Colha assinaturas em termos de uso, contratos e políticas em minutos.</p>
+        <div class="use-case-features">
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Fluxo automatizado de onboarding</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Notificações automáticas ao cliente</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Dashboard de acompanhamento</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Integração com plataformas de CRM</div>
+        </div>
+      </div>
+      <div class="use-case-visual">
+        <svg viewBox="0 0 320 200" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="200" rx="12" fill="#F0FDF4"/>
+          <circle cx="80" cy="80" r="36" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.5"/>
+          <text x="80" y="86" text-anchor="middle" font-size="22">👤</text>
+          <circle cx="80" cy="116" r="8" fill="#22C55E"/>
+          <text x="80" y="120" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="white">✓</text>
+          <rect x="140" y="56" width="148" height="88" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <text x="214" y="78" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="11" font-weight="700" fill="#0F172A">Onboarding</text>
+          <rect x="154" y="86" width="120" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="154" y="98" width="100" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="154" y="118" width="120" height="20" rx="6" fill="#22C55E"/>
+          <text x="214" y="131" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="10" font-weight="700" fill="white">ASSINAR AGORA</text>
+        </svg>
+      </div>
+    </div>
+    <div class="use-case-panel" id="case-2">
+      <div>
+        <div class="use-case-tags"><span class="use-case-tag">RH</span><span class="use-case-tag">DP</span><span class="use-case-tag">Compliance</span></div>
+        <h3 class="use-case-title">RH e admissões</h3>
+        <p class="use-case-desc">Contratos de trabalho, termos de confidencialidade, férias e rescisões. Digitalize toda a jornada do colaborador.</p>
+        <div class="use-case-features">
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Contratos de trabalho digitais</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Gestão de férias e rescisões</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Arquivo seguro e organizado</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Integração com sistemas de RH</div>
+        </div>
+      </div>
+      <div class="use-case-visual">
+        <svg viewBox="0 0 320 200" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="200" rx="12" fill="#FEF3C7"/>
+          <rect x="40" y="30" width="240" height="140" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <rect x="56" y="46" width="80" height="8" rx="4" fill="#CBD5E1"/>
+          <rect x="56" y="62" width="200" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="56" y="74" width="180" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="56" y="86" width="160" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="56" y="108" width="80" height="6" rx="3" fill="#CBD5E1"/>
+          <rect x="56" y="122" width="120" height="28" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+          <text x="116" y="140" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="13" fill="#92400E">Wilian Alves</text>
+          <rect x="200" y="130" width="68" height="16" rx="5" fill="#DCFCE7"/>
+          <text x="234" y="141" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#16a34a">ADMITIDO ✓</text>
+        </svg>
+      </div>
+    </div>
+    <div class="use-case-panel" id="case-3">
+      <div>
+        <div class="use-case-tags"><span class="use-case-tag">Gestão</span><span class="use-case-tag">Financeiro</span></div>
+        <h3 class="use-case-title">Documentos internos</h3>
+        <p class="use-case-desc">Políticas internas, aprovações de orçamento, atas e comunicados. Rastreabilidade em toda comunicação formal.</p>
+        <div class="use-case-features">
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Aprovações com múltiplos níveis</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Rastreio de quem aprovou e quando</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Notificações automáticas</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Arquivo centralizado e seguro</div>
+        </div>
+      </div>
+      <div class="use-case-visual">
+        <svg viewBox="0 0 320 200" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="200" rx="12" fill="#EFF6FF"/>
+          <rect x="30" y="30" width="120" height="140" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <rect x="42" y="46" width="80" height="6" rx="3" fill="#CBD5E1"/>
+          <rect x="42" y="58" width="90" height="5" rx="2.5" fill="#E2E8F0"/>
+          <rect x="42" y="68" width="80" height="5" rx="2.5" fill="#E2E8F0"/>
+          <rect x="42" y="78" width="85" height="5" rx="2.5" fill="#E2E8F0"/>
+          <rect x="42" y="138" width="96" height="18" rx="5" fill="#2563EB"/>
+          <text x="90" y="150" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="700" fill="white">APROVAR</text>
+          <rect x="170" y="30" width="120" height="64" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <text x="230" y="52" text-anchor="middle" font-size="18">👤</text>
+          <text x="230" y="68" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="600" fill="#374151">Diretoria</text>
+          <rect x="186" y="78" width="88" height="12" rx="5" fill="#DCFCE7"/>
+          <text x="230" y="88" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#16a34a">APROVADO ✓</text>
+          <rect x="170" y="106" width="120" height="64" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <text x="230" y="128" text-anchor="middle" font-size="18">👤</text>
+          <text x="230" y="144" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="9" font-weight="600" fill="#374151">Financeiro</text>
+          <rect x="186" y="154" width="88" height="12" rx="5" fill="#FEF3C7"/>
+          <text x="230" y="164" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#92400E">AGUARDANDO</text>
+        </svg>
+      </div>
+    </div>
+    <div class="use-case-panel" id="case-4">
+      <div>
+        <div class="use-case-tags"><span class="use-case-tag">Financeiro</span><span class="use-case-tag">Crédito</span><span class="use-case-tag">Jurídico</span></div>
+        <h3 class="use-case-title">Operações financeiras</h3>
+        <p class="use-case-desc">Contratos de crédito, cessões, garantias e cobranças. Segurança e auditabilidade para operações sensíveis.</p>
+        <div class="use-case-features">
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Autenticação reforçada para operações sensíveis</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Trilha de auditoria completa e imutável</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Integração com sistemas financeiros</div>
+          <div class="use-case-feat"><div class="use-case-feat-check">✓</div>Conformidade regulatória total</div>
+        </div>
+      </div>
+      <div class="use-case-visual">
+        <svg viewBox="0 0 320 200" width="320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="320" height="200" rx="12" fill="#F0FDF4"/>
+          <rect x="30" y="24" width="260" height="152" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+          <rect x="46" y="40" width="80" height="8" rx="4" fill="#CBD5E1"/>
+          <rect x="46" y="56" width="220" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="46" y="68" width="200" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="46" y="80" width="180" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="46" y="100" width="228" height="1" fill="#F1F5F9"/>
+          <text x="100" y="122" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="10" font-weight="700" fill="#374151">Valor: R$ 150.000</text>
+          <rect x="46" y="136" width="100" height="28" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1"/>
+          <text x="96" y="154" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="12" fill="#2563EB">Assinado</text>
+          <rect x="170" y="142" width="96" height="16" rx="5" fill="#DCFCE7"/>
+          <text x="218" y="153" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="8" font-weight="700" fill="#16a34a">ICP-BRASIL ✓</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-eyebrow reveal">Benefícios</p>
+      <h2 class="section-title reveal reveal-delay-1">Impacto direto na operação</h2>
+      <p class="section-desc reveal reveal-delay-2">Resultados mensuráveis desde o primeiro contrato assinado.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-icon" style="background:#EFF6FF">⚡</div>
+        <h3 class="benefit-title">Agilidade operacional</h3>
+        <p class="benefit-desc">Contratos fechados em minutos. Fluxos de aprovação automatizados. Menos gargalos, mais resultado.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-icon" style="background:#DCFCE7">💰</div>
+        <h3 class="benefit-title">Redução de custos</h3>
+        <p class="benefit-desc">Elimine papel, cartório, impressão e logística. Até 80% de redução nos custos de formalização.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-icon" style="background:#EFF6FF">📊</div>
+        <h3 class="benefit-title">Controle e rastreabilidade</h3>
+        <p class="benefit-desc">Veja quem abriu, quem assinou e quando. Dashboard completo com métricas do fluxo documental.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon" style="background:#DCFCE7">🌐</div>
+        <h3 class="benefit-title">Acesso remoto</h3>
+        <p class="benefit-desc">Assine de qualquer dispositivo, em qualquer lugar. Sem necessidade de instalar nada.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-1">
+        <div class="benefit-icon" style="background:#EFF6FF">⚡</div>
+        <h3 class="benefit-title">Validade jurídica</h3>
+        <p class="benefit-desc">Documentos com força legal garantida pela ICP-Brasil e em conformidade com a Lei nº 14.063/2020.</p>
+      </div>
+      <div class="benefit-card reveal reveal-delay-2">
+        <div class="benefit-icon" style="background:#DCFCE7">🏢</div>
+        <h3 class="benefit-title">Escala empresarial</h3>
+        <p class="benefit-desc">API REST para conectar ao seu ERP, CRM ou sistema interno. Volumes ilimitados, SLA garantido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="cta-badge"><span class="cta-badge-dot"></span>Especialistas disponíveis agora</div>
+      <h2 class="cta-title">Sua operação não pode<br>esperar mais</h2>
+      <p class="cta-desc">Fale agora com um especialista e descubra em 15 minutos como digitalizar seus contratos com total segurança jurídica — sem burocracia, sem custo de avaliação.</p>
+      
+      <div class="cta-actions">
+        <a href="https://api.whatsapp.com/send/?phone=5544991230976" target="_blank" rel="noopener" class="btn-cta-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar com um especialista
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="img/logo-branco.png" alt="Assinando Fácil"></div>
+        <p class="footer-desc">Plataforma B2B de assinatura eletrônica com validade jurídica, segurança máxima e escala para qualquer empresa.</p>
+        <div class="footer-seals">
+          <div class="footer-seal">LGPD</div>
+          <div class="footer-seal">Lei 14.063</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Plataforma</div>
+        <ul class="footer-links">
+          <li><a href="#how-it-works">Como funciona</a></li>
+          <li><a href="#security">Segurança</a></li>
+          <li><a href="#use-cases">Casos de uso</a></li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Assinando Fácil. Todos os direitos reservados.</p>
+      <nav class="footer-legal">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">contato@assinandofacil.com.br</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
